@@ -43,7 +43,8 @@ Restart apache2 server.
 
 Now if you use {your-domain-name}/api then it will point to the backend where it is running.
 
-
+<br>
+<br>
 
 If you want to turn on https/ssl in your app, then you have to turn on SSL and add certificate file path.
 You can do this by adding below 5 lines in /etc/apache2/sites-available/default-ssl.conf file : 
