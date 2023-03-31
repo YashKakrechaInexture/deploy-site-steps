@@ -15,7 +15,7 @@ You can go back to "https://nic.eu.org/" site and paste all DNS addresses (e.g. 
 
 Now your domain name is linked with DNS. Now you have to give your IpAddress in your DNS server. 
 
-For that, go to "https://dns.he.net/" site, create new domain name. It will automatically link your domain name with DNS "ns1.he.net"
+For that, go to "https://dns.he.net/" site, create new domain name with {your-domain-name}. It will automatically link your domain name with DNS "ns1.he.net"
 
 Now you have to add your PC's Ip address under "A" record in that domain name with name = "ftp.{your-domain-name}" and value = "{your-ip}"
 
