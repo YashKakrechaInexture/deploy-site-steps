@@ -1,15 +1,17 @@
 First you need a domain name. You can claim free domain on this site : https://nic.eu.org/
-
-
-
+<br>
+<br>
 Then you need to link the domain name with DNS (your ipaddress where server is present). You can do it free on : https://dns.he.net/
 
-
+<br>
+<br>
 
 Then you have to give your DNS address to Registrar where you have your domain name, so other people cannot use your domain name.
 
 You can go back to "https://nic.eu.org/" site and paste all DNS addresses (e.g. "ns1.he.net") under Nameserver section.
 
+<br>
+<br>
 
 Now your domain name is linked with DNS. Now you have to give your IpAddress in your DNS server. 
 
@@ -21,11 +23,15 @@ Now you have to add your PC's Ip address under "A" record in that domain name wi
 
 Now you have to add "CNAME" record with name = "www.{your-domain-name}" and value = "{your-domain-name}", so you can access your website with "www" prefix.
 
+<br>
+<br>
 
 Go to your domain name "http://www.{your-domain-name}" in your browser it should work. It will take your ip address's apache2 files. 
 
 So you have to put your website's files in apache2 folder under : "/var/www/html".
 
+<br>
+<br>
 
 If you want to link backend with your front end app in apache2 then you have to set proxy and reverse proxy.
 Go to /etc/apache2/sites-available/000-default.conf and add below 2 lines :
@@ -49,6 +55,8 @@ ProxyPass /api http://localhost:8080
 ProxyPassReverse /api http://localhost:8080
 ```
 
+<br>
+<br>
 
 
 Now check below command : 
@@ -61,7 +69,8 @@ sudo a2enmod ssl
 ```
 And then run above command, if it prints "mods ssl" then your HTTPS will be started. Go to "https://www.{your-domain-name}" and it should work.
 
-
+<br>
+<br>
 
 To create free certificate, you can install mkcert, it generates free SSL certificates and run below command : 
 ```
